@@ -1,0 +1,55 @@
+import React from "react";
+import { Box, Image, Text } from "@chakra-ui/react";
+import welcome from "../image/welcome.png";
+
+function Welcome() {
+  return (
+    <Box
+      textAlign={"center"}
+      display={"flex"}
+      alignItems={"center"}
+      justifyContent={"center"}
+      flexDirection={"column"}
+      bgColor={"#F8F8EC"}
+      minH={"100vh"}
+    >
+      <Box>
+        <Image
+          src={welcome}
+          width={"300px"}
+          height={"300px"}
+          objectFit={"contain"}
+          priority
+        />
+      </Box>
+      <Text fontSize={"36px"} fontWeight={"bold"}>
+        Xoş Gəlmisən!
+      </Text>
+      <Text
+        mb={"30px"}
+        mx={"5rem"}
+        color={"#828282"}
+        fontSize={"14px"}
+        fontWeight={"400"}
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+        fermentum velit orci, ac rutrum lorem consequat nec. Cras tristique
+        elementum nisl sed ornare.
+      </Text>
+
+      <Box
+        as="a"
+        href="/login"
+        backgroundColor={"#D1FAE5"}
+        border={"1px solid #10B981"}
+        borderRadius={"10px"}
+        textDecoration={"none"}
+        color={"#10B981"}
+        p={"15px 50px"}
+      >
+        Login
+      </Box>
+    </Box>
+  );
+}
+export default Welcome;
