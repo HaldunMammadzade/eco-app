@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Image, Text } from "@chakra-ui/react";
 import welcome from "../image/welcome.png";
+import { Link } from "react-router-dom";
 
 function Welcome() {
   return (
@@ -37,18 +38,19 @@ function Welcome() {
         elementum nisl sed ornare.
       </Text>
 
-      <Box
-        as="a"
-        href="/login"
-        backgroundColor={"#D1FAE5"}
-        border={"1px solid #10B981"}
-        borderRadius={"10px"}
-        textDecoration={"none"}
-        color={"#10B981"}
-        p={"15px 50px"}
+      <Link
+        to="/login"
+        style={{
+          backgroundColor: "#D1FAE5",
+          border: "1px solid #10B981",
+          borderRadius: "10px",
+          textDecoration: "none",
+          color: "#10B981",
+          padding: "15px 50px",
+        }}
       >
         Login
-      </Box>
+      </Link>
     </Box>
   );
 }

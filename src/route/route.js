@@ -12,7 +12,7 @@ const routes = [
     element: <Home />,
   },
   {
-    index: "welcome",
+    path: "welcome",
     element: <Welcome />,
   },
   {

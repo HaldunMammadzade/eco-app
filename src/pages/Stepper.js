@@ -26,10 +26,11 @@ const Stepper = () => {
   const [currentStep, setCurrentStep] = useState(0);
   const navigate = useNavigate();
   const handleSkip = () => {
-    setCurrentStep(steps.length - 1);
+    navigate("/welcome");
   };
 
   const handleNext = () => {
+    console.log(currentStep);
     if (currentStep < steps.length - 1) {
       setCurrentStep((prevStep) => prevStep + 1);
     } else {
@@ -74,7 +75,9 @@ const Stepper = () => {
         </div>
       </div>
       <div className="footer">
-        <button onClick={handleSkip}>Skip</button>
+        <button className="custom-btn" onClick={handleSkip}>
+          Skip
+        </button>
         <div className="dots">
           {steps.map((step, index) => (
             <div
@@ -85,9 +88,9 @@ const Stepper = () => {
           ))}
         </div>
         <button
-          className="animated fadeInUp"
+          className="animated fadeInUp custom-btn"
           onClick={handleNext}
-          disabled={currentStep === steps.length - 1}
+          // disabled={currentStep === steps.length - 1}
         >
           <img src={arrow} alt="Next" />
         </button>
