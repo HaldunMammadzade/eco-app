@@ -253,16 +253,18 @@ body {
 /* MAIN STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .nav {
-  position: relative;
+  position: absolute;
   display: flex;
+  width: 100%;
   justify-content: center;
-  max-width: 400px;
+  bottom: -40px;
+  /* max-width: 400px; */
   padding-bottom: 20px;
   border-radius: 5px 5px 25px 25px;
-  margin: 300px auto 0;
-  background: white;
-  box-shadow: rgb(50 50 93 / 10%) 0 30px 60px -12px,
-    rgb(0 0 0 / 15%) 0 18px 36px -18px;
+  margin: 0;
+  z-index: 9999;
+  background: transparent;
+  box-shadow: rgb(50 50 93 / 10%) 0 30px 60px -12px, rgb(0 0 0 / 15%) 0 18px 36px -18px;
 }
 
 .nav [type="checkbox"] {
@@ -280,14 +282,15 @@ body {
   font-size: 16px;
   cursor: pointer;
   z-index: 1;
-  background: var(--violet);
+  background: white;
   border-radius: 50%;
   transform: translateY(-50%);
   transition: all 0.2s;
+  box-shadow: 0 0 30px black;
 }
 
 .nav [type="checkbox"] + label:hover {
-  background: green;
+  background: white;
 }
 
 .menu li {
@@ -296,6 +299,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   transition: all 0.4s;
+  list-style: none;
 }
 
 .menu li:nth-child(1) {
@@ -321,7 +325,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: green;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 0 30px black;
+}
+.menu li a img {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
 }
 
 .menu li a span {
@@ -340,31 +351,27 @@ body {
 }
 
 .nav input:checked + label {
-  background: black;
+  background: white;
   transform: translateY(calc(-50% + 4px));
 }
 
 .nav input:checked ~ .menu li:nth-child(1) {
-  top: -210px;
+  top: -130px;
   transition-delay: 0.1s;
 }
 
 .nav input:checked ~ .menu li:nth-child(2) {
-  top: -160px;
+  top: -85px;
   left: calc(50% - 75px);
   transition-delay: 0.2s;
 }
 
 .nav input:checked ~ .menu li:nth-child(3) {
-  top: -160px;
+  top: -85px;
   left: calc(50% + 75px);
   transition-delay: 0.3s;
 }
 
-.nav input:checked ~ .menu li:nth-child(4) {
-  top: -110px;
-  transition-delay: 0.4s;
-}
 
 .nav input:checked ~ .menu li a span {
   opacity: 1;

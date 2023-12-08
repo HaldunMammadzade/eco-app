@@ -1,4 +1,8 @@
 import React from "react";
+import {  Image  } from "@chakra-ui/react";
+import qr from "../../image/menu-qr.svg";
+import person from "../../image/menu-person.svg";
+import leaf from "../../image/menu-leaf.svg";
 function Menu() {
   return (
     <div>
@@ -7,29 +11,21 @@ function Menu() {
         <label for="menu">Menu</label>
         <ul className={"menu"}>
           <li>
-            <a href="#0">
-              <span>About</span>
-              <i className="fas fa-address-card" aria-hidden="true"></i>
+            <a href="/qr">
+              <Image src={qr} />
             </a>
           </li>
           <li>
-            <a href="#0">
-              <span>Projects</span>
-              <i className="fas fa-tasks" aria-hidden="true"></i>
+            <a href="/">
+              <Image src={person} />
             </a>
           </li>
           <li>
-            <a href="#0">
-              <span>Clients</span>
-              <i className="fas fa-users" aria-hidden="true"></i>
+            <a href="/">
+              <Image src={leaf} />
             </a>
           </li>
-          <li>
-            <a href="#0">
-              <span>Contact</span>
-              <i className="fas fa-envelope-open-text" aria-hidden="true"></i>
-            </a>
-          </li>
+          
         </ul>
       </nav>
     </div>

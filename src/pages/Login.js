@@ -42,7 +42,7 @@ function Login() {
           <input type="password" placeholder="Şifrə" />
         </Box>
         <Box className={"inputBox"}>
-          <a href="/about">
+          <a href="/map">
             <input type="submit" value="Login" id="btn" />
           </a>
         </Box>
