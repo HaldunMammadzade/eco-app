@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import QrReader from "react-web-qr-reader";
-
+import { useNavigate } from "react-router-dom";
+import {  Text  } from "@chakra-ui/react";
 const QrReaderPage = () => {
+  const navigate = useNavigate();
   const delay = 500;
 
   const previewStyle = {
@@ -14,6 +16,7 @@ const QrReaderPage = () => {
   const handleScan = (result) => {
     if (result) {
       setResult(result);
+      navigate("/about");
     }
   };
 
@@ -23,13 +26,14 @@ const QrReaderPage = () => {
 
   return (
     <>
-      <div style={{ height: "100vh" }}>
+      <div >
         <QrReader
           delay={delay}
           style={previewStyle}
           onError={handleError}
           onScan={handleScan}
         />
+        
         <p>{result}</p>
       </div>
     </>

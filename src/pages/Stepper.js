@@ -58,12 +58,14 @@ const Stepper = () => {
               display: "flex",
               justifyContent: "center",
             }}
+            className="animated flipInY"
           >
             <img
               src={currentStepData.img}
               alt={`Step ${currentStep + 1}`}
-              className="stepImage"
+              className="animated flipInY  stepImage"
               style={{ objectFit: "contain" }}
+              
             />
           </div>
           <h2 style={{ fontWeight: "semibold", fontSize: "24px" }}>

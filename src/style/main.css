@@ -1,5 +1,19 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Afacad&display=swap');
+* {
+  font-family: 'Afacad', sans-serif;
+}
+.himaye {
+  background-color: #D1FAE5;
+    color: #006443;
+    padding: 10px 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-top: 20px;
 
+}
 .section {
   position: relative;
   display: flex;
@@ -60,7 +74,7 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   border-right: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 20px;
-  width: 500px;
+  width: 330px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -86,10 +100,9 @@
   outline: none;
   font-size: 1em;
   color: green;
-  /* border-radius: 5px; */
+  border-radius: 20px;
   background: #fff;
   border: none;
-  margin-bottom: 20px;
 }
 .login .inputBox ::placeholder {
   color: green;
@@ -118,9 +131,7 @@
   font-weight: 500;
   text-decoration: none;
 }
-.login .group a:nth-child(2) {
-  text-decoration: underline;
-}
+
 .leaves {
   position: absolute;
   width: 100%;
@@ -257,9 +268,9 @@ body {
   display: flex;
   width: 100%;
   justify-content: center;
-  bottom: -40px;
+  bottom: 0;
   /* max-width: 400px; */
-  padding-bottom: 20px;
+  padding-bottom: 0px;
   border-radius: 5px 5px 25px 25px;
   margin: 0;
   z-index: 9999;
@@ -286,7 +297,7 @@ body {
   border-radius: 50%;
   transform: translateY(-50%);
   transition: all 0.2s;
-  box-shadow: 0 0 30px black;
+  box-shadow: 0 0 30px #ccc;
 }
 
 .nav [type="checkbox"] + label:hover {
@@ -327,7 +338,7 @@ body {
   justify-content: center;
   background: #fff;
   padding: 20px;
-  box-shadow: 0 0 30px black;
+  box-shadow: 0 0 30px #ccc;
 }
 .menu li a img {
   width: 25px;
@@ -356,20 +367,27 @@ body {
 }
 
 .nav input:checked ~ .menu li:nth-child(1) {
-  top: -130px;
+  top: -110px;
+  left: calc(50% - 35px);
   transition-delay: 0.1s;
 }
 
 .nav input:checked ~ .menu li:nth-child(2) {
-  top: -85px;
-  left: calc(50% - 75px);
-  transition-delay: 0.2s;
+  top: -52px;
+    left: calc(50% - 86px);
+    transition-delay: 0.2s;
 }
 
 .nav input:checked ~ .menu li:nth-child(3) {
-  top: -85px;
-  left: calc(50% + 75px);
-  transition-delay: 0.3s;
+  top: -52px;
+    left: calc(50% - -86px);
+    transition-delay: 0.2s;
+}
+
+.nav input:checked ~ .menu li:nth-child(4) {
+  top: -110px;
+  left: calc(50% - -35px);
+  transition-delay: 0.1s;
 }
 
 
@@ -480,3 +498,37 @@ body {
   border: none;
   font-size: 14px;
 }
+
+.skillBar {
+  margin-bottom:26px;
+  margin-bottom: 1.66em;
+  h4 {
+    font-size:21px;
+    font-size: 1.33em;
+    text-transform: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom:7px;
+    margin-bottom: .33em;
+  }
+}
+.skillBarContainer {
+  width: 90%;
+  max-width: 350px;
+  height:26px;
+  height: 12px;
+  background: #F4F3F6;
+  background: #F4F3F6;
+  background: #F4F3F6;
+  overflow: hidden;
+  border-radius:5px;
+}
+.skillBarValue {
+  height: 12px;
+  float: left;
+  background:#31CD63;
+  background: #31CD63;
+  background: #31CD63;
+}
+
+.value-90  { width: 90%;  }

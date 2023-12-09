@@ -1,5 +1,6 @@
 import { useRoutes } from "react-router-dom";
 import "./style/main.css";
+import "./style/animate.css"
 import routes from "./route/route";
 function App() {
   const routing = useRoutes(routes);

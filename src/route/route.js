@@ -4,7 +4,11 @@ import Login from "../pages/Login";
 import MapComponent from "../pages/Map";
 import Stepper from "../pages/Stepper";
 import Welcome from "../pages/Welcome";
-import About from "../pages/about/About";
+import About from "../pages/About";
+import TreeGame from "../pages/TreeGame";
+import Questions from "../pages/Questions";
+import Leaderboard from "../pages/Leaderboard";
+import Coins from "../pages/Coins";
 
 const routes = [
   {
@@ -26,6 +30,22 @@ const routes = [
   {
     path: "stepper",
     element: <Stepper />,
+  },
+  {
+    path: "tree-game",
+    element: <TreeGame />,
+  },
+  {
+    path: "questions",
+    element: <Questions />,
+  },
+  {
+    path: "coins",
+    element: <Coins />,
+  },
+  {
+    path: "leaderboard",
+    element: <Leaderboard />,
   },
   {
     path: "qr",

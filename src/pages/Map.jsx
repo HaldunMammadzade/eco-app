@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
-import Menu from "./about/Menu";
+import Menu from "../components/Menu";
 import treeMap from "../image/tree-map.png";
 L.Icon.Default.mergeOptions({
   iconRetinaUrl:
@@ -44,6 +44,8 @@ function MapComponent() {
       lat: 40.380468,
       lng: 49.876731,
     },
+
+    
     
   ]);
   const [map, setMap] = useState(null);

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function Home() {
   return (
     <Box
-      className="animated fadeIn"
+      className=""
       textAlign={"center"}
       display={"flex"}
       alignItems={"center"}
@@ -14,7 +14,7 @@ export default function Home() {
       bgColor={"#F8F8EC"}
       minH={"100vh"}
     >
-      <Box className="animated slideInDown">
+      <Box className="animated fadeInLeft">
         <Image
           src={img1}
           width={"300px"}
@@ -23,10 +23,10 @@ export default function Home() {
           priority
         />
       </Box>
-      <Text fontSize={"36px"} fontWeight={"bold"} color={"#0E7F3D"}>
+      <Text className="animated fadeInRight" fontSize={"36px"} fontWeight={"bold"} color={"#0E7F3D"}>
         Tree Love
       </Text>
-      <Text
+      <Text className="animated fadeInRight"
         my={"30px"}
         mx={"5rem"}
         color={"#828282"}
@@ -38,7 +38,7 @@ export default function Home() {
         elementum nisl sed ornare.
       </Text>
 
-      <Link
+      <Link className="animated fadeInRight"
         to="/stepper"
         style={{
           backgroundColor: "#D1FAE5",

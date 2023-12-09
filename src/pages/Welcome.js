@@ -27,7 +27,7 @@ function Welcome() {
         Xoş Gəlmisən!
       </Text>
       <Text
-        mb={"30px"}
+        my={"30px"}
         mx={"5rem"}
         color={"#828282"}
         fontSize={"14px"}
