@@ -22,7 +22,7 @@ export default function Coins() {
                   <Box>
                         <Link to="/map">
                               <Image position={""}
-                                    mt="30px"
+                                    mt="20px"
                                     ml={"30px"}
                                     src={leftArrow} />
                         </Link>
@@ -31,12 +31,12 @@ export default function Coins() {
                         <Image ml={"7px"} src={leafs} />
                         </Box>
 
-                        <Box display={"flex"} flexDirection={"column"} textAlign={"center"} justifyContent={"center"} className="animated fadeInDown" bgColor={"white"} borderRadius={"20px"} mx={"20px"} mt={"60px"} px={"20px"} py={"30px"} fontSize={"18px"}>
+                        <Box display={"flex"} flexDirection={"column"} textAlign={"center"} justifyContent={"center"} className="animated fadeInDown" bgColor={"white"} borderRadius={"20px"} mx={"20px"} mt={"20px"} px={"20px"} py={"20px"} fontSize={"18px"}>
                               <Image height={"160px"} objectFit={"contain"} src={gift} />
                               <Text mt={"20px"}>Ümumi Quiz Nəticəsi</Text>
                         </Box>
 
-                        <Box className="animated fadeInRightBig" mb={"20px"} display={"flex"} justifyContent={"center"} bgColor={"white"} borderRadius={"20px"} mx={"20px"} mt={"30px"} px={"20px"} py={"30px"} fontSize={"16px"}>
+                        <Box className="animated fadeInRightBig" mb={"20px"} display={"flex"} justifyContent={"center"} bgColor={"white"} borderRadius={"20px"} mx={"20px"} mt={"30px"} px={"10px"} py={"10px"} fontSize={"16px"}>
                               <Text mb={"0"}>“GREEN COIN”ləri hədiyyəylə dəyiş</Text>
                         </Box>
 

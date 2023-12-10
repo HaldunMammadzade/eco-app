@@ -51,7 +51,7 @@ export default function Leaderboard() {
                         </Link>
                   </Box>
 
-                  <Box className="animated fadeInRight" h={"70px"} mb={"20px"} display={"flex"} alignItems={"center"} justifyContent={"space-between"} bgColor={"#CECACA"} borderRadius={"20px"} mx={"20px"} mt={"20px"} px={"20px"} py={"5px"} fontSize={"18px"}>
+                  <Box className="animated fadeInRight" h={"60px"} mb={"10px"} display={"flex"} alignItems={"center"} justifyContent={"space-between"} bgColor={"#CECACA"} borderRadius={"20px"} mx={"20px"} mt={"10px"} px={"20px"} py={"5px"} fontSize={"15px"}>
                         <Box display={"flex"} alignItems={"center"}>
                               <Text color={"black"} mr={"15px"} mb={"0"}>4</Text>
                               <Image mr={"10px"} w={"50px"} h={"50px"} borderRadius={"50%"} src={person3} />
@@ -63,7 +63,7 @@ export default function Leaderboard() {
                         </Box>
                   </Box>
 
-                  <Box className="animated fadeInLeft" h={"70px"} mb={"20px"} display={"flex"} alignItems={"center"} justifyContent={"space-between"} bgColor={"#CECACA"} borderRadius={"20px"} mx={"20px"} mt={"20px"} px={"20px"} py={"5px"} fontSize={"18px"}>
+                  <Box className="animated fadeInLeft" h={"70px"} mb={"10px"} display={"flex"} alignItems={"center"} justifyContent={"space-between"} bgColor={"#CECACA"} borderRadius={"20px"} mx={"20px"} mt={"10px"} px={"20px"} py={"5px"} fontSize={"15px"}>
                         <Box display={"flex"} alignItems={"center"}>
                               <Text color={"black"} mr={"15px"} mb={"0"}>5</Text>
                               <Image mr={"10px"} w={"50px"} h={"50px"} borderRadius={"50%"} src={person5} />
@@ -75,7 +75,7 @@ export default function Leaderboard() {
                         </Box>
                   </Box>
 
-                  <Box className="animated fadeInLeft" h={"70px"} mb={"20px"} display={"flex"} alignItems={"center"} justifyContent={"space-between"} bgColor={"#CECACA"} borderRadius={"20px"} mx={"20px"} mt={"20px"} px={"20px"} py={"5px"} fontSize={"18px"}>
+                  <Box className="animated fadeInLeft" h={"70px"} mb={"10px"} display={"flex"} alignItems={"center"} justifyContent={"space-between"} bgColor={"#CECACA"} borderRadius={"20px"} mx={"20px"} mt={"10px"} px={"20px"} py={"5px"} fontSize={"15px"}>
                         <Box display={"flex"} alignItems={"center"}>
                               <Text color={"black"} mr={"15px"} mb={"0"}>6</Text>
                               <Image mr={"10px"} w={"50px"} h={"50px"} borderRadius={"50%"} src={person1} />

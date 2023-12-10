@@ -71,7 +71,7 @@ const Questions = () => {
           <Box
             key={index}
             className={`animated ${index % 2 === 0 ? 'fadeInRight' : 'fadeInLeft'}`}
-            mb={"20px"}
+            mb={"10px"}
             display={"flex"}
             justifyContent={"space-between"}
             border={`2px solid ${answer.isCorrect && currentQuestion.answeredCorrectly ? "green" : !answer.isCorrect && currentQuestion.answeredCorrectly ? "red" : "white"}`}
@@ -79,10 +79,10 @@ const Questions = () => {
             bgColor={"white"}
             color={"green"}
             mx={"20px"}
-            mt={"30px"}
+            mt={"20px"}
             px={"20px"}
             py={"20px"}
-            fontSize={"18px"}
+            fontSize={"16px"}
             onClick={() => handleAnswerClick(answer.isCorrect)}
           >
             <Text mb={"0"}>{answer.text}</Text>

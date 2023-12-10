@@ -39,7 +39,7 @@ export default function About() {
   const randomDate = getRandomDate();
   const randomCord = getRandomCord();
   return (
-    <Box>
+    <Box minH={"100vh"}>
       <Box
         position={"relative"}
         dropShadow={"0 0 20px green"}
@@ -48,7 +48,7 @@ export default function About() {
         bgSize={"contain"}
         bgRepeat={"no-repeat"}
         bgPosition={"right"}
-        h={"60vh"}
+        h={"55vh"}
         borderBottomLeftRadius={"40px"}
         borderBottomRightRadius={"40px"}
       >
@@ -72,9 +72,9 @@ export default function About() {
 
       <Box my={"40px"} mx={"40px"}>
         <UnorderedList>
-          <ListItem my={"15px"} fontSize={"20px"}>Koordinatlar: {randomCord}</ListItem>
-          <ListItem my={"15px"} fontSize={"20px"}>Fitosanitar vəziyyəti: {randomMood}</ListItem>
-          <ListItem my={"15px"} fontSize={"20px"}>Qeydiyyat tarixi: {randomDate}</ListItem>
+          <ListItem my={"15px"} fontSize={"16px"}>Koordinatlar: {randomCord}</ListItem>
+          <ListItem my={"15px"} fontSize={"16px"}>Fitosanitar vəziyyəti: {randomMood}</ListItem>
+          <ListItem my={"15px"} fontSize={"16px"}>Qeydiyyat tarixi: {randomDate}</ListItem>
         </UnorderedList>
 
         <Link to="/tree-game" className="himaye">Himayəyə götür </Link>
