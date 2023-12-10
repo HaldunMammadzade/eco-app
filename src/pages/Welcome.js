@@ -26,17 +26,7 @@ function Welcome() {
       <Text fontSize={"36px"} fontWeight={"bold"}>
         Xoş Gəlmisən!
       </Text>
-      <Text
-        my={"30px"}
-        mx={"5rem"}
-        color={"#828282"}
-        fontSize={"14px"}
-        fontWeight={"400"}
-      >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-        fermentum velit orci, ac rutrum lorem consequat nec. Cras tristique
-        elementum nisl sed ornare.
-      </Text>
+     
 
       <Link
         to="/login"
@@ -47,9 +37,25 @@ function Welcome() {
           textDecoration: "none",
           color: "#10B981",
           padding: "15px 50px",
+          marginTop: "30px"
         }}
       >
         Login
+      </Link>
+
+      <Link
+        to="/login"
+        style={{
+          backgroundColor: "#D1FAE5",
+          border: "1px solid #10B981",
+          borderRadius: "10px",
+          textDecoration: "none",
+          color: "#10B981",
+          padding: "15px 50px",
+          marginTop: "30px"
+        }}
+      >
+        Qeydiyyat
       </Link>
     </Box>
   );

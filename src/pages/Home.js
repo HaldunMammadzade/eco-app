@@ -26,17 +26,7 @@ export default function Home() {
       <Text className="animated fadeInRight" fontSize={"36px"} fontWeight={"bold"} color={"#0E7F3D"}>
         Tree Love
       </Text>
-      <Text className="animated fadeInRight"
-        my={"30px"}
-        mx={"5rem"}
-        color={"#828282"}
-        fontSize={"14px"}
-        fontWeight={"400"}
-      >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-        fermentum velit orci, ac rutrum lorem consequat nec. Cras tristique
-        elementum nisl sed ornare.
-      </Text>
+      
 
       <Link className="animated fadeInRight"
         to="/stepper"
@@ -47,6 +37,7 @@ export default function Home() {
           textDecoration: "none",
           color: "#10B981",
           padding: "15px 50px",
+          marginTop: "30px"
         }}
       >
         Başla

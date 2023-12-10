@@ -7,10 +7,10 @@ import {
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import Menu from "../components/Menu";
-import treeAbout from "../image/tree-about.png";
+import treeAbout from "../image/zeytuyn.svg";
 import leftArrow from "../image/left-arrow.svg";
 
-const randomNames = ["Zeytun", "Şərq çinarı", "Söyüd", "Tut", "Xəzər lələyi", "Şam"];
+const randomNames = ["Zeytun",];
 const randomDate = ["11.01.2023", "07.06.2023", "26.12.2022", "01.05.2021", "20.04.2023", "03.10.2021", ];
 const randomMood= ["Yaxşı", "Qənaətbəxş"];
 const randomCord= ["40.378343; 49.848305", "41.345343; 47.234435", "40.354654; 49.465733", "40.123435; 48.745675"];

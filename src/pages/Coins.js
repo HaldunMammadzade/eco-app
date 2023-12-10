@@ -42,18 +42,6 @@ export default function Coins() {
 
                         <Box className="animated fadeInLeftBig" mb={"10px"} display={"flex"} alignItems={"center"} justifyContent={"space-between"} mx={"20px"} mt={"30px"} fontSize={"16px"}>
                               <Box display={"flex"} alignItems={"center"}>
-                                    <Image mr={"10px"} src={icon1} />
-                                    <Text mb={"0"} color={"black"}>Milli parklara giriş</Text>
-                              </Box>
-
-                              <Box display={"flex"} alignItems={"center"}>
-                                    <Text mb={"0"} color={"black"}>5</Text>
-                                    <Image ml={"10px"} width={"20px"} src={icon} />
-                              </Box>
-                        </Box>
-
-                        <Box className="animated fadeInRightBig" mb={"20px"} display={"flex"} alignItems={"center"} justifyContent={"space-between"} mx={"20px"} my={"25px"}  fontSize={"16px"}>
-                              <Box display={"flex"} alignItems={"center"}>
                                     <Image mr={"10px"} src={icon2} />
                                     <Text mb={"0"} color={"black"}>Milli parklara giriş</Text>
                               </Box>
@@ -64,26 +52,38 @@ export default function Coins() {
                               </Box>
                         </Box>
 
-                        <Box className="animated fadeInLeftBig" mb={"20px"} display={"flex"} alignItems={"center"} justifyContent={"space-between"} mx={"20px"} my={"25px"} fontSize={"16px"}>
+                        <Box className="animated fadeInRightBig" mb={"20px"} display={"flex"} alignItems={"center"} justifyContent={"space-between"} mx={"20px"} my={"10px"}  fontSize={"16px"}>
                               <Box display={"flex"} alignItems={"center"}>
                                     <Image mr={"10px"} src={icon3} />
-                                    <Text mb={"0"} color={"black"}>Milli parklara giriş</Text>
+                                    <Text mb={"0"} color={"black"}>Eko çanta</Text>
                               </Box>
 
                               <Box display={"flex"} alignItems={"center"}>
-                                    <Text mb={"0"} color={"black"}>5</Text>
+                                    <Text mb={"0"} color={"black"}>10</Text>
                                     <Image ml={"10px"} width={"20px"} src={icon} />
                               </Box>
                         </Box>
 
-                        <Box className="animated fadeInRightBig" mb={"20px"} display={"flex"} alignItems={"center"} justifyContent={"space-between"} mx={"20px"}  my={"25px"} fontSize={"16px"}>
+                        <Box className="animated fadeInLeftBig" mb={"20px"} display={"flex"} alignItems={"center"} justifyContent={"space-between"} mx={"20px"} my={"10px"} fontSize={"16px"}>
                               <Box display={"flex"} alignItems={"center"}>
                                     <Image mr={"10px"} src={icon4} />
-                                    <Text mb={"0"} color={"black"}>Milli parklara giriş</Text>
+                                    <Text mb={"0"} color={"black"}>Qoruğa giriş bileti</Text>
                               </Box>
 
                               <Box display={"flex"} alignItems={"center"}>
-                                    <Text mb={"0"} color={"black"}>5</Text>
+                                    <Text mb={"0"} color={"black"}>8</Text>
+                                    <Image ml={"10px"} width={"20px"} src={icon} />
+                              </Box>
+                        </Box>
+
+                        <Box className="animated fadeInRightBig" mb={"20px"} display={"flex"} alignItems={"center"} justifyContent={"space-between"} mx={"20px"}  my={"10px"} fontSize={"16px"}>
+                              <Box display={"flex"} alignItems={"center"}>
+                                    <Image mr={"10px"} src={icon1} />
+                                    <Text mb={"0"} color={"black"}>“Yaşıl Gələcək”dən sertifikat</Text>
+                              </Box>
+
+                              <Box display={"flex"} alignItems={"center"}>
+                                    <Text mb={"0"} color={"black"}>2</Text>
                                     <Image ml={"10px"} width={"20px"} src={icon} />
                               </Box>
                         </Box>

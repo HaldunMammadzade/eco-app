@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Box, Text, Image } from "@chakra-ui/react";
+import { Box, Text, Image,useToast } from "@chakra-ui/react";
 import { Link, useNavigate } from "react-router-dom";
+
 import Menu from "../components/Menu";
 import cover from "../image/cover.jpg";
 import leftArrow from "../image/left-white.svg";
@@ -14,7 +15,7 @@ const Questions = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [currentQuestion, setCurrentQuestion] = useState(null);
   const [correctAnswers, setCorrectAnswers] = useState([]);
-
+  const toast = useToast(); 
   const navigate = useNavigate();
 
   const shuffleArray = (array) => [...array].sort(() => Math.random() - 0.5);
@@ -28,16 +29,24 @@ const Questions = () => {
   const handleAnswerClick = (isCorrect) => {
     if (isCorrect) {
       setCurrentQuestion({ ...currentQuestion, answeredCorrectly: true });
-      // Eğer doğru cevap verildiyse, currentQuestion'u doğru cevaplar dizisine ekleyin
       setCorrectAnswers((prevAnswers) => [...prevAnswers, currentQuestion]);
+
+      setTimeout(() => {
+        navigate("/tree-game");
+      }, 3000);
+    } else {
+      toast({
+        title: "Cavab doğru deyil !",
+        status: "error",
+        duration: 3000,
+        isClosable: true,
+      });
     }
-    // Diğer cevap durumlarına göre burada gerekirse başka işlemler ekleyebilirsiniz
   };
 
   useEffect(() => {
     if (currentQuestion && currentQuestion.answeredCorrectly) {
-      // Eğer doğru cevap verildiyse, sayfayı /tree-game'e yönlendirin
-      navigate("/tree-game");
+      // navigate("/tree-game");
     }
   }, [currentQuestion, navigate]);
 

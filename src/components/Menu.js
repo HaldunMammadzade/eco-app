@@ -30,7 +30,7 @@ function Menu() {
             </a>
           </li>
           <li>
-            <a href="/about">
+            <a href="/tree-game">
               <Image src={leaf} />
             </a>
           </li>

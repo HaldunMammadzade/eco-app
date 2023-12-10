@@ -2,23 +2,29 @@ import React, { useState } from "react";
 import trackingMaps from "../image/TrackingMaps.svg";
 import order from "../image/Order.svg";
 import tree from "../image/tree.svg";
+import tree2 from "../image/tree2.svg";
 import arrow from "../image/arrow.svg";
 import { useNavigate } from "react-router-dom";
 const steps = [
   {
     title: "Ağac himayə götür",
-    desc: "You don't have to go far to find a good restaurant, we have provided all the restaurants that are near you",
+    desc: "Ağacla təmasa keçib QR kodu oxut və ağacı himayə götür",
     img: trackingMaps,
   },
   {
     title: "Suallara cavab ver",
-    desc: "Now eat well, don't leave the house,You can choose your favorite food only with one click",
+    desc: "Ətraf-mühit haqqında məlumatlı olmaq və yeni bilgilər mənimsəmək üçün sualları cavabla",
     img: order,
   },
   {
     title: "Ağaca qulluq et",
-    desc: "You can eat at expensive restaurants with an affordable price",
+    desc: "Suallara doğru cavablar verərək ağaca qulluğu tamamla",
     img: tree,
+  },
+  {
+    title: "Green Coin-lər qazan",
+    desc: "Bu prosesi davamlı edərək Green Coin-lər qazan və hədiyyələr seç",
+    img: tree2,
   },
 ];
 
@@ -78,7 +84,7 @@ const Stepper = () => {
       </div>
       <div className="footer">
         <button className="custom-btn" onClick={handleSkip}>
-          Skip
+          Keç
         </button>
         <div className="dots">
           {steps.map((step, index) => (

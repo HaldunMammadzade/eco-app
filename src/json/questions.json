@@ -13,45 +13,9 @@
           "question": "Bitkilər hansı prosesdə tərəqqi edir?",
           "answers": [
             { "text": "Solunma", "isCorrect": false },
-            { "text": "Fotosintez", "isCorrect": true },
             { "text": "Transpirasiya", "isCorrect": false },
-            { "text": "Reproduksiya", "isCorrect": false }
-          ]
-        },
-        {
-          "question": "Ağacların gövdəsində hansı funksiya yerinə yetirilir?",
-          "answers": [
-            { "text": "Fotosintez", "isCorrect": false },
-            { "text": "Kökələmə", "isCorrect": false },
-            { "text": "Fotosintez", "isCorrect": false },
-            { "text": "Destəkləmə", "isCorrect": true }
-          ]
-        },
-        {
-          "question": "Bitkilər hansı orqan vasitəsilə su çəkirlər?",
-          "answers": [
-            { "text": "Yapraklar", "isCorrect": false },
-            { "text": "Kök", "isCorrect": true },
-            { "text": "Körpücük", "isCorrect": false },
-            { "text": "Çiçək", "isCorrect": false }
-          ]
-        },
-        {
-          "question": "Photosynthesis nə deməkdir?",
-          "answers": [
-            { "text": "Fotosintez", "isCorrect": true },
-            { "text": "Təbiət şəraitində yaşamaq", "isCorrect": false },
-            { "text": "Fotografiya çəkmək", "isCorrect": false },
-            { "text": "Şəkil tərtib etmək", "isCorrect": false }
-          ]
-        },
-        {
-          "question": "Ağaclar nə üçün tənəffüs edir?",
-          "answers": [
-            { "text": "Qida almaq üçün", "isCorrect": false },
-            { "text": "Oksigen verərək", "isCorrect": true },
-            { "text": "Yumru yarpaqları üçün", "isCorrect": false },
-            { "text": "Gövdəni böyütmək üçün", "isCorrect": false }
+            { "text": "Reproduksiya", "isCorrect": false },
+            { "text": "Fotosintez", "isCorrect": true }
           ]
         }
       ]
